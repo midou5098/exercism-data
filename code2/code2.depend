@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1770580435 source:/home/bro/coding/code2/main.c
+	<stdio.h>
+	<stdlib.h>
+	"headers.h"
+
+1770579110 /home/bro/coding/code2/headers.h
+
+1770580416 source:/home/bro/coding/code2/fonctions.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"headers.h"
+
