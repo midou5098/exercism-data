@@ -33,8 +33,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/bro/exercism-data/c++",
-      "program": "/home/bro/exercism-data/c++/build/Debug/outDebug",
+      "cwd": "/home/bro/exercism-data/multi stats library system",
+      "program": "/home/bro/exercism-data/multi stats library system/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
