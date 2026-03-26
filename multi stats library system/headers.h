@@ -16,4 +16,146 @@ extern "C" {
 
 
 
+class book{
+    int s;
+    int id;
+    std::string name;
+    std::string author;
+    std::string genre;
+    int pages;
+    bool borrowed;
+    double ratings;
+    public:
+        void borrow(void){
+        borrowed = !borrowed;
+    }
+    void modify(void){
+        do {
+            
+            std::cout<<"*********modifying"<<name<< "************ ";
+            std::cout<<"aight wtchu tryna modify lil bro : ";
+            std::cout<<"1 is for name  \n ";
+            std::cout<<"2 is for author  \n ";
+            std::cout<<"3 is for pages  \n ";
+            std::cout<<"4 is for genre  \n ";
+            std::cout<<"-1 is for exit  \n ";
+            std::cin>>s;
+            switch (s){
+                case 1:
+                    std::cout<<" new name type shi? : \n";
+                    std::cin>>name;
+                    break;
+                case 2:
+                    std::cout<<" new author type shi? : \n";
+                    std::cin>>author;
+                    break;
+                    case 3:
+                    std::cout<<" new pages type shi? : \n";
+                    std::cin>>pages;
+                    break;
+                    case 4:
+                    std::cout<<" new genre type shi? : \n";
+                    std::cin>>genre;
+                    break;
+                    default:
+                        std::cout<<" type a valid choice nigga \n";}
+            }while(s!=-1);
+            
+        }
+    }
+class author{
+    int id;
+    int s;
+    std::string name;
+    int age ;
+    int bookcnt ;
+    std::string color;
+    public:
+        void modify(void){
+        do {
+            std::cout<<"*********modifying a nigga************ ";
+            std::cout<<"aight wtchu tryna modify lil bro : ";
+            std::cout<<"1 is for name  \n ";
+            std::cout<<"2 is for age  \n ";
+            std::cout<<"3 is for viewing books number  \n ";
+            std::cout<<"4 is for skin color  \n ";
+            std::cout<<"-1 is for exit  \n ";
+            std::cin>>s;
+            switch (s){
+                case 1:
+                    std::cout<<" new name type shi? : \n";
+                    std::cin>>name;
+                    break;
+                case 2:
+                    std::cout<<" new age type shi? : \n";
+                    std::cin>>age;
+                    break;
+                    case 3:
+                    std::cout<<"dis nigga got "<<bookcnt <<"books \n";
+                    break;
+                    case 4:
+                    std::cout<<" new skin type shi? : \n";
+                    std::cin>>color;
+                    break;
+                    default:
+                        std::cout<<" type a valid choice nigga \n";}
+            }while(s!=-1);
+            
+        }
+    };
+class staff{
+    int s;
+    int id;
+    std::string name;
+    int age;
+    int position;
+    int salary;
+    char mastery;
+    public:
+        void modify(void){
+            do {
+                std::cout<<"*********modifying a nigga************ ";
+                std::cout<<"aight wtchu tryna modify lil bro : ";
+                std::cout<<"1 is for name  \n ";
+                std::cout<<"2 is for age  \n ";
+                std::cout<<"3 is for viewing books number  \n ";
+                std::cout<<"4 is for position  \n ";
+                std::cout<<"-1 is for exit  \n ";
+                std::cin>>s;
+                switch (s){
+                    case 1:
+                        std::cout<<" new name type shi? : \n";
+                        std::cin>>name;
+                        break;
+                    case 2:
+                        std::cout<<" new age type shi? : \n";
+                        std::cin>>age;
+                        break;
+                        case 3:
+                        std::cout<<"dis nigga gets "<<salary <<"per month , talk abt minimum wage.... \n";
+                        break;
+                        case 4:
+                        std::cout<<" new skin type shi? : \n";
+                        std::cin>>color;
+                        break;
+                        default:
+                            std::cout<<" type a valid choice nigga \n";}
+                }while(s!=-1);
+
+}
+void menu(void){
+    int s;
+    do{
+        std::cout<<"*********modifying a nigga************ ";
+        std::cout<<"aight wtchu tryna do lil bro : ";
+        std::cout<<"1 look up a book   \n ";
+        std::cout<<"2 is for age  \n ";
+        std::cout<<"3 is for viewing books number  \n ";
+        std::cout<<"4 is for position  \n ";
+        std::cout<<"-1 is for exit  \n ";
+    }
+}
+extern std::vector<book> staff;
+extern std::vector<book> books;
+extern std::vector<author> authors;
 #endif
